@@ -180,7 +180,7 @@ h1 {
 .social-links a i {
     font-size: 24px; 
     transition: 0.3s;
-    color: var(--accent); 
+    color: #7c3aed; 
 }
 
 .social-links a:hover i {
