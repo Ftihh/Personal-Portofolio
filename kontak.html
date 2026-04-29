@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Saya — Fatih Alfarisi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fas fa-code"></i> Ftiih.dev</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="kontak.html" class="active">Kontak</a></li>
+            </ul>
+            <div class="theme-toggle"><i class="fas fa-sun"></i></div>
+        </nav>
+    </header>
+
+    <main class="container-page">
+        <section class="contact-header">
+            <span class="badge-outline"><i class="far fa-envelope"></i> Mari Berkolaborasi</span>
+            <h1>Hubungi <span class="highlight">Saya</span></h1>
+            <p>Punya ide proyek menarik atau ingin berdiskusi tentang kolaborasi? Saya selalu terbuka untuk percakapan baru.</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <div class="info-item">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <small>EMAIL</small>
+                        <p>alfatizl26@email.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon-box"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <small>TELEPON</small>
+                        <p>+62 812-2674-7921</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <small>LOKASI</small>
+                        <p>Surakarta, Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="availability-card">
+                    <span class="dot"></span>
+                    <h4>Tersedia untuk proyek baru</h4>
+                    <p>Saya sedang menerima proyek freelance dan peluang full-time.</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nama Lengkap *</label>
+                            <input type="text" placeholder="Ahmad Fatih" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat Email *</label>
+                            <input type="email" placeholder="kamu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subjek *</label>
+                        <select required>
+                            <option value="" selected>Pilih topik...</option>
+                            <option>Proyek Baru</option>
+                            <option>Tawaran Pekerjaan</option>
+                            <option>Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Pesan *</label>
+                        <textarea rows="5" placeholder="Ceritakan proyek atau ide Anda di sini..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><i class="fas fa-code"></i> Dibuat dengan <span>Murni HTML/CSS/JS</span> oleh <strong>Fatih Alfarisi</strong></p>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="portofolio.html">Portofolio</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Fatih Alfarisi. Semua hak dilindungi.</p>
+    </footer>
+
+    <svg class="bg-wave" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+    <defs>
+      <linearGradient id="bg">
+        <stop offset="0%" stop-color="rgba(75, 60, 105, 0.253)" />
+        <stop offset="50%" stop-color="rgba(75, 50, 125, 0.652)" />
+        <stop offset="100%" stop-color="rgba(69, 93, 124, 0.482" />
+      </linearGradient>
+
+      <path id="wave" fill="url(#bg)"
+        d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+        s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859
+        s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"/>
+    </defs>
+
+    <use href="#wave" class="wave wave1"/>
+    <use href="#wave" class="wave wave2"/>
+    <use href="#wave" class="wave wave3"/>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
