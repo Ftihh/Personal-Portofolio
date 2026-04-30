@@ -32,6 +32,7 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     scroll-behavior: smooth;
+    
 }
 
 /* Navbar */
@@ -179,8 +180,8 @@ h1 {
 
 .social-links a i {
     font-size: 24px; 
-    color: #7c3aed;
-    transition: 0.3s; 
+    transition: 0.3s;
+    color: #7c3aed; 
 }
 
 .social-links a:hover i {
@@ -474,6 +475,7 @@ footer {
 
 .info-item p{
     cursor: pointer;
+    color: var(--text-main);
 }
 
 .icon-box {
@@ -582,4 +584,138 @@ svg {
     0%   { transform: translate(270px, 230px); }
     50%  { transform: translate(-300px, 200px); }
     100% { transform: translate(270px, 230px); }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /* nvabar */
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan menu standar, besok kita buat hamburger menu */
+    }
+
+
+
+
+
+
+    /* 2. Hero Section */
+    .hero {
+        display: flex;
+        flex-direction: column-reverse; 
+        min-height: 100vh;
+        height: auto;
+        overflow: visible;
+        text-align: center;
+        padding-top: 120px;
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin: 0 auto 25px;
+    }
+
+    .image-container img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .experience-badge {
+        position: absolute;
+        bottom: 20px;
+        right: -20px;
+
+        font-size: 8px;
+        padding: 5px 10px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+
+
+
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+        grid-template-columns: 1fr; 
+        padding: 0 10px;
+    }
+
+    .project-card {
+        margin-bottom: 20px;
+    }
+
+    .filter-container {
+        display: flex;
+        overflow-x: auto; 
+        padding-bottom: 10px;
+        justify-content: center;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-btn {
+        white-space: nowrap; 
+        padding: 8px 20px;
+    }
+
+
+
+
+
+    /* Contact */
+    .container-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh; 
+    padding-top: 100px; 
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 40px;              
+        width: 100%;
+        max-width: 800px;       
+        margin: 0 auto;
+
+    }
+
+    .availability-card{
+        text-align: center;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-content p span {
+        text-align: center;
+    }
+}
+
+@media (hover: none) {
+    .project-card:active {
+        transform: scale(0.98);
+    }
 }
