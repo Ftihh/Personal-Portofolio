@@ -586,10 +586,7 @@ svg {
     100% { transform: translate(270px, 230px); }
 }
 
-
-
-@media screen and (max-width: 768px) {
-    /* nvabar */
+@media screen and (max-width: 768px){
     .navbar {
         padding: 15px 5%;
     }
@@ -598,12 +595,6 @@ svg {
         display: none; /* Sembunyikan menu standar, besok kita buat hamburger menu */
     }
 
-
-
-
-
-
-    /* 2. Hero Section */
     .hero {
         display: flex;
         flex-direction: column-reverse; 
@@ -614,6 +605,62 @@ svg {
         padding-top: 120px;
         gap: 40px;
     }
+
+    .hero-btns {
+        flex-direction: column; 
+        max-width: 46%;
+        gap: 15px;
+    }
+
+    .image-container img {
+        transition: all 0.3s ease;
+    }
+
+
+    /* Portofolio */
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr; 
+        padding: 0 10px;
+    }
+
+
+
+    .container-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh; 
+    padding-top: 100px; 
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 40px;              
+        width: 100%;
+        max-width: 800px;       
+        margin: 0 auto;
+    }
+
+    .availability-card{
+        text-align: center;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-content p span {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
 
     .hero-content h1 {
         font-size: 2.5rem;
@@ -627,7 +674,7 @@ svg {
     .image-container img {
         width: 200px;
         height: 200px;
-        border-radius: 50%;
+        transition: all 0.3s ease;
     }
 
     .experience-badge {
@@ -642,6 +689,7 @@ svg {
     .hero-btns {
         justify-content: center;
         flex-direction: column; 
+        max-width: 100%;
         gap: 15px;
     }
 
@@ -652,7 +700,6 @@ svg {
     /* Portfolio Grid */
     .portfolio-grid {
         grid-template-columns: 1fr; 
-        padding: 0 10px;
     }
 
     .project-card {
@@ -678,40 +725,7 @@ svg {
 
 
     /* Contact */
-    .container-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 85vh; 
-    padding-top: 100px; 
-    }
-
-    .contact-header {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .contact-content {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        gap: 40px;              
-        width: 100%;
-        max-width: 800px;       
-        margin: 0 auto;
-
-    }
-
-    .availability-card{
-        text-align: center;
-    }
-
-    .footer-content{
-        flex-direction: column;
-    }
-
-    .footer-content p span {
-        text-align: center;
-    }
+    
 }
 
 @media (hover: none) {

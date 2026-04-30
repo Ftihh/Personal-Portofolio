@@ -1,10 +1,10 @@
 style.css:
-    penambahan @media untuk mobile view
+    penambahan @media untuk mobile view & ipad/tab view
 
 style.css:
-    sedikit perbaikan pada hero image dan info-item pada page kontak
+    sedikit perbaikan pada hero image, transisi img pada tampilan mobile & ipad dan info-item pada page kontak
 
 stok:
-    FontAwesome
+    fontawesome.com
     favicon.io
-    LottieFilles
+    animatedbackground.me
