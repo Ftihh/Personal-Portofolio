@@ -179,8 +179,8 @@ h1 {
 
 .social-links a i {
     font-size: 24px; 
-    transition: 0.3s;
-    color: #7c3aed; 
+    color: #7c3aed;
+    transition: 0.3s; 
 }
 
 .social-links a:hover i {
