@@ -1,0 +1,10 @@
+style.css:
+    penambahan @media untuk mobile view
+
+style.css:
+    sedikit perbaikan pada hero image dan info-item pada page kontak
+
+stok:
+    FontAwesome
+    favicon.io
+    LottieFilles
