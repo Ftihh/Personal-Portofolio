@@ -5,6 +5,8 @@ const themeToggle = document.querySelector('.theme-toggle');
 const icon = themeToggle.querySelector('i');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
+const hamburger = document.querySelector('#hamburger-btn');
+const sidebar = document.querySelector('#sidebar-menu');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -37,6 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+    
+    // Ganti icon hamburger ke silang
+    const icon = hamburger.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+});
+
+// Tutup sidebar kalau user klik link-nya
+document.querySelectorAll('.sidebar-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        const icon = hamburger.querySelector('i');
+        icon.classList.replace('fa-times', 'fa-bars');
+    });
+});
 
 
 const currentTheme = localStorage.getItem('theme');
