@@ -475,7 +475,12 @@ footer {
 
 .info-item p{
     cursor: pointer;
+}
+
+.info-item p a{
+    text-decoration: none;
     color: var(--text-main);
+    transition: color 0.3s ease;
 }
 
 .icon-box {
@@ -586,7 +591,9 @@ svg {
     100% { transform: translate(270px, 230px); }
 }
 
-@media screen and (max-width: 768px){
+
+
+@media screen and (max-width: 840px){
     .navbar {
         padding: 15px 5%;
     }

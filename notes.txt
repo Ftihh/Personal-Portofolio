@@ -4,6 +4,13 @@ style.css:
 style.css:
     sedikit perbaikan pada hero image, transisi img pada tampilan mobile & ipad dan info-item pada page kontak
 
+kontak.html:
+    penambahan elemn <a> didalam <p> pad class info-item
+
+style.css:
+    sedikit memperbaiki tampilan pada halaman kontak, 
+    dimana nomor telephone sebelumnya hanya dibungkus elemen <p>, sekarang di tambahkan <a href> didalamnya.
+
 stok:
     fontawesome.com
     favicon.io
