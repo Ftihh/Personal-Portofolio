@@ -757,27 +757,22 @@ svg {
 @media screen and (max-width: 625px) {
 
     .sidebar{
-        width: 120px;
-        padding:15px 0px 30px 0px;
+        width: 150px;
+        padding:15px 0px 40px 7px;
     }
 
    .sidebar-links {
-        
-        
-        gap: 0.7rem;
+        gap: 0.8rem;
     }
 
     .sidebar-links a {
         padding-left: 10px;
-        font-size: 0.8rem;
-      
-        gap: 10px;
-        
+        font-size: 1rem;
+        gap: 6px;
     }
 
     .sidebar-links a i{
-
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         width: 20px;
     }
 
@@ -828,7 +823,7 @@ svg {
     .filter-container {
         display: flex;
         overflow-x: auto; 
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         justify-content: center;
         gap: 10px;
         -webkit-overflow-scrolling: touch;
@@ -837,6 +832,10 @@ svg {
     .filter-btn {
         white-space: nowrap; 
         padding: 8px 20px;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+        box-shadow: none;
     }
 
 
