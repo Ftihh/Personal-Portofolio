@@ -1,2 +1,8 @@
-html, css, js:
-menambahkan navbar
+script.js:
+    Menghapus semua script kecuali theme
+
+style.css:
+    memnambah kode animasi untuk hero section
+
+.html:
+    menambahkan arrow section untuk berpindah halaman.

@@ -100,7 +100,7 @@ header {
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-.hamburger {
+.arrow-left{
     width: 40px;
     height: 40px;
 
@@ -111,72 +111,63 @@ header {
     display: none;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
-    color: var(--accent);
+
     transition: 0.3s;
 }
 
-.hamburger:hover{
+.arrow-left a{
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.arrow-left:active, .arrow-left:hover{
     transform: scale(1.1);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: var(--accent);
 }
 
+.arrow-right{
+    width: 40px;
+    height: 40px;
 
-.sidebar {
-    position: fixed;
-    top: 120px;
-    right: -100%; /* Sembunyi di kanan */
-    width: 220px;
-    height: auto;
-    display: flex;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    display: none;
     align-items: center;
-    padding:25px 0px 70px 40px;
-    margin-right: 25px;
-    
-    /* Efek Kaca (Glassmorphism) */
-    background: var(--foot-bg); /* Sangat transparan */
-    backdrop-filter: blur(10px); /* Blur yang kuat */
-    -webkit-backdrop-filter: blur(10px);
-    
-    border: 2.5px solid rgba(255,255,255,0.1);
-    border-radius: 17px;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
-    
-    /* Animasi Smooth */
-    transition: all 0.5s ease;
-}
+    justify-content: center;
+    cursor: pointer;
 
-.sidebar.active {
-    right: 0;
-}
-
-/* Styling links di dalam sidebar */
-.sidebar-links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-}
-
-.sidebar-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.3rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 15px;
     transition: 0.3s;
 }
 
-.sidebar-links a:hover{
+.arrow-right a{
+    text-decoration: none;
     color: var(--accent);
-    transform: scale(1.2);
+}
+
+.arrow-right:active, .arrow-right:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: var(--accent);
 }
 
 
 /* Hero Section */
+@keyframes fadeInup{
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero {
     height: 100vh;
     display: flex;
@@ -188,6 +179,10 @@ header {
 
 .hero-content {
     max-width: 600px;
+
+    opacity: 0;
+    animation: fadeInup 0.5s ease-in forwards;
+    animation-delay: 0.1s;
 }
 
 .status-badge {
@@ -443,8 +438,8 @@ footer {
 }
 
 .filter-btn {
-    background: var(--card-bg);
-    color: var(--text-muted);
+    background: var(--accent);
+    color: white;
     border: 1px solid rgba(255,255,255,0.1);
     padding: 8px 20px;
     border-radius: 30px;
@@ -452,11 +447,6 @@ footer {
     transition: 0.3s;
 }
 
-.filter-btn.active, .filter-btn:hover {
-    background: var(--accent);
-    color: white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
 
 .portfolio-grid {
     display: grid;
@@ -498,6 +488,10 @@ footer {
 
 .project-info {
     padding: 1.5rem;
+}
+
+.project-info h2{
+    font-size: 18px;
 }
 
 .tags {
@@ -542,6 +536,10 @@ footer {
     gap: 4rem;
     text-align: left;
     margin-top: 4rem;
+}
+
+.contact-info h2{
+    font-size: 18px;
 }
 
 .info-item {
@@ -681,7 +679,11 @@ svg {
         padding: 15px 5%;
     }
 
-    .hamburger{
+    .arrow-left{
+        display: flex;
+    }
+
+    .arrow-right{
         display: flex;
     }
 
@@ -755,26 +757,6 @@ svg {
 }
 
 @media screen and (max-width: 625px) {
-
-    .sidebar{
-        width: 150px;
-        padding:15px 0px 40px 7px;
-    }
-
-   .sidebar-links {
-        gap: 0.8rem;
-    }
-
-    .sidebar-links a {
-        padding-left: 10px;
-        font-size: 1rem;
-        gap: 6px;
-    }
-
-    .sidebar-links a i{
-        font-size: 0.8rem;
-        width: 20px;
-    }
 
     .hero-content h1 {
         font-size: 2.5rem;
